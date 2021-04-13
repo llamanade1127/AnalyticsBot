@@ -1,0 +1,19 @@
+{
+  "name": "analyticsbot",
+  "version": "1.0.0",
+  "description": "Bot that gets data from EPIG RPG bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llamanade1127/AnalyticsBot.git"
+  },
+  "author": "llamande1127",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llamanade1127/AnalyticsBot/issues"
+  },
+  "homepage": "https://github.com/llamanade1127/AnalyticsBot#readme"
+}
