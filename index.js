@@ -1,6 +1,7 @@
 
 const Discord = require("discord.js");
-const {token} = require('./config.json');
+const mongoose = require('mongoose');
+const {token, dbURL} = require('./config.json');
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"], disableEveryone: false , });
 
 client.commands = new Discord.Collection();
@@ -11,3 +12,13 @@ client.events = new Discord.Collection();
 });
 
 client.login(token);
+
+
+function logIn(){
+    mongoose.connect(dbURL, {useNewUrlParser: true, useUnifiedTopology: true})
+    .then(console.log('d b connected'));
+}
+
+function initialGet(){
+    
+}
