@@ -14,6 +14,10 @@ const BotSchema = new Schema({
     commandsWSubstring:{
         type:[[String]],
         required: true
+    },
+    botOwner:{
+        type: String,
+        required: true
     }
 }, {timestamps: true})
 

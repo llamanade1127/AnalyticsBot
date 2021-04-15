@@ -44,8 +44,11 @@ const validatePermissions = (permissions) => {
 }
 
 module.exports = ( Discord, client, message) => {
-    const {prefix} = require('../../config.json');
+    const {prefix, botId} = require('../../config.json');
     //console.log(prefix);
+
+    if(message.content.startsWith(prefix) || message.author.id == botId)
+
     if(!message.content.startsWith(prefix) || message.author.bot) return;
     //console.log(prefix)
     const args = message.content.slice(prefix.length).split(/ +/);
