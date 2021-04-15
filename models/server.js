@@ -10,9 +10,9 @@ const serverSchema = new Schema({
         type: String,
         required: true
     },
-    commands:{
-        type:[String],
-        required: true
+    botItteration:{
+        type: Number,
+        required:true
     },
     mostUsedCommand:{
         type:String,
@@ -26,7 +26,6 @@ const serverSchema = new Schema({
         type: [String], //Gives access to the bot
         required: true
     }
-
 
 }, {timestamps: true})
 
